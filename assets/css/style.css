@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+main{
+    overflow-x: hidden;
+    background-color: #1F65DE;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    background-color: #1F29DE;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px;
+}
+
+header img {
+    height: 60px;
+    width: auto;
+    border-radius: 100%;
+}
+
+header span.menu svg {
+    height: 30px;
+    width: 30px;
+    display: none;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    gap: 16px;
+    width: 90%;
+}
+
+header ul li a{
+    padding: 14px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #FFF;
+    font-weight: 400;
+}
+
+#target-menu{
+    padding: 16px;
+    margin-right: 32px;
+    cursor: pointer;
+}
+
+#list-menu.show-menu {
+    display: block;
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    background: #1F65DE;
+    height: 100%;
+    left: 0;
+    right: 0;
+    width: 90%;
+}
+
+.close  {
+    display: none;
+}
+
+#list-menu.show-menu .close {
+    display: block;
+}
+
+.container {
+    width: 90%;
+    padding: 16px 32px;
+}
+
+
+#inicio {
+    background-image: url("https://greenlifeacademias.com.br/wp/wp-content/uploads/2020/09/bem-estar.jpg");
+    background-position: top;
+    background-size: cover;
+    height: 400px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#inicio h1 {
+    max-width: 50%;
+}
+
+section {
+    min-height: 250px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+#calculadora {
+    height: 600px;
+    background-color: #FFF;
+}
+
+p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+
+form {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+form button {
+    background-color: #1F29DE;
+    color: #FFF;
+    height: 45px;
+    margin: auto;
+    border: none;
+    width: 200px;
+}
+
+.container-calculadora {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-input {
+    margin-top: 16px;
+}
+
+.container-input input{
+    height: 45px;
+    width: 300px;
+    margin-bottom: 16px;
+    border-radius: 16px;
+    padding: 8px 16px;
+}
+
+
+
+ /* Responsividade: */
+@media only screen and (max-width: 768px) {
+   
+    header span.menu svg{ 
+        display: block;
+    }
+
+    header #list-menu {
+        display: none;
+    }
+
+    .close {
+        font-weight: 500;
+        position: absolute;
+        top: 10px;
+        right: 64px;
+        font-size: 32px;
+    }
+
+    #list-menu ul{
+        flex-direction: column;
+        margin-top: 32px;
+    }
+
+    #list-menu ul li {
+        height: 45px;
+    }
+
+}
+
+@media(min-width: 992px) {
+    .container {
+        width: 100%;
+    }
+
+    header ul li {
+        width: 200px;
+    }
+}
